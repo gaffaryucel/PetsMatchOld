@@ -11,7 +11,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import tr.com.izmirsoftware.petsmatch.databinding.FragmentDashboardBinding
 import tr.com.izmirsoftware.petsmatch.ui.viewmodel.dashboard.DashboardViewModel
 
-@AndroidEntryPoint
 class DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null

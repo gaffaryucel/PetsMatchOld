@@ -4,8 +4,8 @@ plugins {
     id ("androidx.navigation.safeargs.kotlin")
     id ("com.google.gms.google-services")
     id ("com.google.devtools.ksp")
-    id ("kotlin-kapt")
-    id ("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -35,12 +35,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+
     buildFeatures {
         viewBinding = true
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+        languageVersion = "1.5"
+    }
+
 }
 
 dependencies {
@@ -63,8 +66,8 @@ dependencies {
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.6")
 
     //Hilt
-    implementation ("com.google.dagger:hilt-android:2.51.1")
-    kapt ("com.google.dagger:hilt-compiler:2.51.1")
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
 }
 
 kapt {

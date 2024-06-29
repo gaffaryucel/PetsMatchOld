@@ -11,7 +11,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import tr.com.izmirsoftware.petsmatch.databinding.FragmentHomeBinding
 import tr.com.izmirsoftware.petsmatch.ui.viewmodel.home.HomeViewModel
 
-@AndroidEntryPoint
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null

@@ -11,7 +11,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import tr.com.izmirsoftware.petsmatch.databinding.FragmentNotificationsBinding
 import tr.com.izmirsoftware.petsmatch.ui.viewmodel.notifications.NotificationsViewModel
 
-@AndroidEntryPoint
 class NotificationsFragment : Fragment() {
 
     private var _binding: FragmentNotificationsBinding? = null
