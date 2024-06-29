@@ -13,7 +13,6 @@ data class Pet(
     val personality: String? = null, // Hayvanın kişilik tanımı
     val interests: List<String>? = null, // Hayvanın ilgi alanları
     val healthInfo: HealthInfo? = null, // Hayvanın sağlık bilgisi
-    val location: Location? = null, // Hayvanın konumu
     val ownerId: String? = null // Hayvanın sahibinin kimliği
 )
 
@@ -27,5 +26,7 @@ enum class Gender {
     FEMALE
 }
 
-
-
+data class HealthInfo(
+    val vaccinations: List<String>? = null, // Hayvanın aşıları
+    val allergies: List<String>? = null, // Hayvanın alerjileri
+)
