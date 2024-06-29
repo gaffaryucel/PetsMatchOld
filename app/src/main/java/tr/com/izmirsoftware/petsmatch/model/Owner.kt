@@ -7,10 +7,10 @@ data class Owner(
     val phone: String? = null, // Hayvan sahibinin telefonu
     val email: String? = null, // Hayvan sahibinin e-posta adresi
     val profileImage: String? = null, // Hayvan sahibinin profil resmi
-    val comments: Comments? = null
+    val comments: List<Comments>? = null // Hayvan sahibi için yapılan yorumlar ve Puanlar
 )
 
 data class Comments(
-    val comment: String? = null, // Hayvan sahibi için yapılan yorumlar
+    val comment: String? = null, // Hayvan sahibi için yapılan yorum
     val rating: Double? = null, // Hayvan sahibi için verilen puan
 )
