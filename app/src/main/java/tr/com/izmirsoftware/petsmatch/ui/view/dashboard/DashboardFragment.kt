@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import dagger.hilt.android.AndroidEntryPoint
 import tr.com.izmirsoftware.petsmatch.databinding.FragmentDashboardBinding
 import tr.com.izmirsoftware.petsmatch.ui.viewmodel.dashboard.DashboardViewModel
 
